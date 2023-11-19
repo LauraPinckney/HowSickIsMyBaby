@@ -1,5 +1,12 @@
 import './navbar.scss';
+import React from 'react';
 
 export const navbar = () => {
-  return <></>;
+  return (
+    <>
+      <div>
+        <a href="/">Home</a>
+      </div>
+    </>
+  );
 };
