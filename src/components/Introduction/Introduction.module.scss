@@ -1,8 +1,11 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
 .container {
   margin: 0 2em 0 2em;
 
   &Alert {
-    color: palevioletred;
+    color: $alert-text-colour;
     font-weight: 700;
     line-height: 1.25rem;
     justify-items: center;
