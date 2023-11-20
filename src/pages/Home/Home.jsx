@@ -1,7 +1,13 @@
 import React from 'react';
 import './Home.scss';
 import { Introduction } from '../../components';
+import { TwoAnswers } from '../../components/TwoAnswers/TwoAnswers';
 
 export const Home = () => {
-  return <Introduction />;
+  return (
+    <div>
+      <Introduction />
+      <TwoAnswers />
+    </div>
+  );
 };

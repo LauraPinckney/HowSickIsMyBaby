@@ -4,6 +4,7 @@ import React from 'react';
 export const Introduction = () => {
   return (
     <div className={styles.container}>
+      <h1>How Sick is My Baby?</h1>
       <h2>How this works</h2>
       <p>
         How Sick is My Baby? is designed to help you decide whether your baby
@@ -21,13 +22,14 @@ export const Introduction = () => {
         <li>has glazed eyes and is not focussing on anything </li>
         <li>has been badly or seriously injured</li>
         <li>
-          has a rash that does not fade when pressed with a glass do not use
-          Baby Check
+          has a rash that does not fade when pressed with a glass do not use How
+          Sick is My Baby?
         </li>
       </ol>
       <p className={styles.containerAlert}>
         These conditions require urgent medical help.
       </p>
+
       <h2>When you want to check your baby:</h2>
       <ol>
         <li>undress your baby in a warm place </li>
