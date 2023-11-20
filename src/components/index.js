@@ -1,2 +1,2 @@
-export { intro } from './intro/intro.jsx';
-export { navbar } from './navbar/navbar.jsx';
+export { Introduction } from './Introduction/Introduction.jsx';
+export { Navbar } from './navbar/navbar.jsx';

@@ -1,0 +1,10 @@
+.container {
+  margin: 0 2em 0 2em;
+
+  &Alert {
+    color: palevioletred;
+    font-weight: 700;
+    line-height: 1.25rem;
+    justify-items: center;
+  }
+}

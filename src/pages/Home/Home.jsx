@@ -1,4 +1,7 @@
 import React from 'react';
 import './Home.scss';
+import { Introduction } from '../../components';
 
-export const Home = () => {};
+export const Home = () => {
+  return <Introduction />;
+};
