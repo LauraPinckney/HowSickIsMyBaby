@@ -4,3 +4,13 @@
 .container {
   margin: 0 2em 0 2em;
 }
+
+.next {
+  padding-top: 2em;
+  &Button {
+    border: lightgreen solid 1px;
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
+    background-color: lightgreen;
+  }
+}

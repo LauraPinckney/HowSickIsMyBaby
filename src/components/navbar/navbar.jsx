@@ -4,7 +4,9 @@ import React from 'react';
 export const Navbar = () => {
   return (
     <div className={styles.container}>
-      <a href="/">Home</a>
+      <a className={styles.home} href="/">
+        Home
+      </a>
     </div>
   );
 };
