@@ -14,12 +14,6 @@ export const TwoAnswers = () => {
           <input id="answer" type="radio" name="qAnswer" /> "a2"
         </label>
       </div>
-      <div className={styles.back}>
-        <a className={styles.backButton}>Back</a>
-      </div>
-      <div className={styles.next}>
-        <a className={styles.nextButton}>Next</a>
-      </div>
     </div>
   );
 };

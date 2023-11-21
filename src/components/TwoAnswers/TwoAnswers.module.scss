@@ -4,21 +4,3 @@
 .container {
   margin: 0 2em 0 2em;
 }
-
-.back {
-  padding-top: 2em;
-  &Button {
-    @include button;
-    border: lightsalmon;
-    background-color: lightsalmon;
-  }
-}
-
-.next {
-  padding-top: 2em;
-  &Button {
-    @include button;
-    border: lightgreen;
-    background-color: lightgreen;
-  }
-}
