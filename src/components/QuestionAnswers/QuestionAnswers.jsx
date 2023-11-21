@@ -2,15 +2,17 @@ import React from 'react';
 import styles from './QuestionAnswers.module.scss';
 
 export const QuestionAnswers = ({ questions }) => {
-  console.log(JSON.stringify(questions, null, 2));
+  // console.log(JSON.stringify(questions, null, 2));
+
+  const qOne = questions[0];
   return (
     <div className={styles.container}>
-      <h2>"question"</h2>
-      <h3>"further"</h3>
+      <h2>{qOne.question}</h2>
+      <h3>{qOne.further}</h3>
       <div className={styles.containerButtons}>
-        <label>
-          <input id="answer" type="radio" name="Answer" /> "a1"
-        </label>
+        {qOne.answers.map((answer) => {})}
+        <label></label>
+        <input id="answer" type="radio" name="Answer" />
         <label>
           <input id="answer" type="radio" name="Answer" /> "a2"
         </label>
