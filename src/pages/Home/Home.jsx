@@ -20,7 +20,6 @@ export const Home = () => {
     <div>
       <Introduction />
       <QuestionAnswers questions={questions} />
-      <NavButtons />
     </div>
   );
 };
