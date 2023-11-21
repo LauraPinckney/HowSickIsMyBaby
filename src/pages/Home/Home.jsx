@@ -9,6 +9,7 @@ export const Home = () => {
 
   const fetchQuestions = async () => {
     const { data } = await axios.get(`${BASE_URL}/questions`);
+
     setQuestions(data);
   };
 
@@ -20,7 +21,6 @@ export const Home = () => {
     <div>
       <Introduction />
       <QuestionAnswers questions={questions} />
-      <NavButtons />
     </div>
   );
 };
