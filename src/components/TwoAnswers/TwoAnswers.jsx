@@ -6,7 +6,7 @@ export const TwoAnswers = () => {
     <div className={styles.container}>
       <h2>"question"</h2>
       <h3>"further"</h3>
-      <div>
+      <div className={styles.containerButtons}>
         <label>
           <input id="answer" type="radio" name="qAnswer" /> "a1"
         </label>
