@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './TwoAnswers.module.scss';
+import styles from './QuestionAnswers.module.scss';
 
-export const TwoAnswers = () => {
+export const QuestionAnswers = () => {
   return (
     <div className={styles.container}>
       <h2>"question"</h2>
@@ -12,6 +12,12 @@ export const TwoAnswers = () => {
         </label>
         <label>
           <input id="answer" type="radio" name="qAnswer" /> "a2"
+        </label>
+        <label>
+          <input id="answer" type="radio" name="qAnswer" /> "a3"
+        </label>
+        <label>
+          <input id="answer" type="radio" name="qAnswer" /> "a4"
         </label>
       </div>
     </div>

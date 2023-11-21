@@ -1,14 +1,12 @@
 import React from 'react';
 import './Home.scss';
-import { Introduction } from '../../components';
-import { TwoAnswers } from '../../components/TwoAnswers/TwoAnswers';
-import { NavButtons } from '../../components/NavButtons/NavButtons';
+import { Introduction, QuestionAnswers, NavButtons } from '../../components';
 
 export const Home = () => {
   return (
     <div>
       <Introduction />
-      <TwoAnswers />
+      <QuestionAnswers />
       <NavButtons />
     </div>
   );
