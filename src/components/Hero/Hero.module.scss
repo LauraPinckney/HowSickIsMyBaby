@@ -4,10 +4,11 @@
 .container {
   margin: 0 2em 0 2em;
   display: flex;
+  justify-content: center;
 }
 
 .image {
-  width: 50%;
+  width: 75%;
   background-image: url('../../assets/images/sketchBaby.jpg');
   justify-content: center;
 }

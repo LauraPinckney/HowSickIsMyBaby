@@ -6,6 +6,7 @@ export const Hero = () => {
   return (
     <div className={styles.container}>
       <img className={styles.image} src={sketchBaby} alt="Sketch of Baby"></img>
+      <h1>How Sick is My Baby?</h1>
     </div>
   );
 };
