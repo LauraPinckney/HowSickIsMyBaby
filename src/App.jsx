@@ -4,6 +4,7 @@ import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar/navbar';
 import { Questions } from './pages/Questions/Questions';
+import { Result } from './pages/Result/Result';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/questions" element={<Questions />} />
+          <Route path="/result" element={<Result />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
