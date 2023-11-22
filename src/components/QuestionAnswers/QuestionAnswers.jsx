@@ -5,6 +5,7 @@ import axios from 'axios';
 import { BASE_URL } from '../../constants';
 
 const baseAnswersState = {
+  0: 0,
   1: 0,
   2: 0,
   3: 0,
@@ -23,16 +24,25 @@ const baseAnswersState = {
   16: 0,
   17: 0,
   18: 0,
-  19: 0,
 };
 
 export const QuestionAnswers = () => {
   const [questions, setQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState(baseAnswersState);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const fetchQuestions = async () => {
     const { data } = await axios.get(`${BASE_URL}/questions`);
     setQuestions(data);
+  };
+
+  const handleQuestionNav = (increment) => {
+    const result = increment ? currentQuestion + 1 : currentQuestion - 1;
+
+    if (result < 0 || result > 18) {
+      return;
+    }
+    setCurrentQuestion(result);
   };
 
   useEffect(() => {
@@ -43,7 +53,7 @@ export const QuestionAnswers = () => {
     return;
   }
 
-  const qOne = questions[0];
+  const qOne = questions[currentQuestion];
   return (
     <>
       <div className={styles.container}>
@@ -67,7 +77,7 @@ export const QuestionAnswers = () => {
                   onClick={() => {
                     setSelectedAnswers({
                       ...selectedAnswers,
-                      [1]: answer.score,
+                      [currentQuestion]: answer.score,
                     });
                   }}
                 />
@@ -78,7 +88,7 @@ export const QuestionAnswers = () => {
       </div>
 
       <div>
-        <NavButtons />
+        <NavButtons setCurrentQuestion={setCurrentQuestion} />
       </div>
     </>
   );
