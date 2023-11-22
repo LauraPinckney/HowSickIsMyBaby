@@ -35,6 +35,12 @@ export const Introduction = () => {
         <li>undress your baby in a warm place </li>
         <li>carefully follow the instructions for each check</li>
       </ol>
+
+      <div className={styles.start}>
+        <a className={styles.startButton} href="/questions">
+          Start
+        </a>
+      </div>
     </div>
   );
 };

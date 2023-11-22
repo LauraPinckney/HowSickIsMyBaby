@@ -13,3 +13,15 @@
     text-decoration: underline;
   }
 }
+
+.start {
+  padding-top: 1.5em;
+  justify-content: right;
+  display: flex;
+
+  &Button {
+    @include button;
+    border: lightgreen;
+    background-color: lightgreen;
+  }
+}
