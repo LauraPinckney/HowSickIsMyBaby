@@ -1,0 +1,13 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.container {
+  margin: 0 2em 0 2em;
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  background-image: url('../../assets/images/sketchBaby.jpg');
+  justify-content: center;
+}

@@ -1,9 +1,11 @@
+import { Hero } from '../Hero/Hero';
 import styles from './Introduction.module.scss';
 import React from 'react';
 
 export const Introduction = () => {
   return (
     <div className={styles.container}>
+      <Hero />
       <h1>How Sick is My Baby?</h1>
       <h2>How this works</h2>
       <p>
