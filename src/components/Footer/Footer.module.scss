@@ -1,0 +1,12 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.container {
+  margin: 1em 2em 1em 2em;
+}
+
+.text {
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+}

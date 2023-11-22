@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar/navbar';
 import { Questions } from './pages/Questions/Questions';
 import { Result } from './pages/Result/Result';
+import { Footer } from './components';
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </>
   );
 };
