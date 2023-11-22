@@ -88,7 +88,7 @@ export const QuestionAnswers = () => {
       </div>
 
       <div>
-        <NavButtons setCurrentQuestion={setCurrentQuestion} />
+        <NavButtons handleQuestionNav={handleQuestionNav} />
       </div>
     </>
   );

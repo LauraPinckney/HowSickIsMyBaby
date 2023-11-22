@@ -23,11 +23,9 @@ export const Introduction = () => {
         <li>is unresponsive and not aware of what is going on</li>
         <li>has glazed eyes and is not focussing on anything </li>
         <li>has been badly or seriously injured</li>
-        <li>
-          has a rash that does not fade when pressed with a glass do not use How
-          Sick is My Baby?
-        </li>
+        <li>has a rash that does not fade when pressed with a glass </li>
       </ol>
+      <p className={styles.containerAlert}>Do not use How Sick is My Baby</p>
       <p className={styles.containerAlert}>
         These conditions require urgent medical help.
       </p>
