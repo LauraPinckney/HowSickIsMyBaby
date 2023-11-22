@@ -53,7 +53,10 @@ export const QuestionAnswers = () => {
           {qOne.answers.map((answer, index) => {
             return (
               <Fragment key={answer.question}>
-                <label htmlFor={`question-${index + 1}`}>
+                <label
+                  className={styles.containerAnswer}
+                  htmlFor={`question-${index + 1}`}
+                >
                   {answer.question}
                 </label>
                 <input
