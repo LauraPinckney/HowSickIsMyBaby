@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './NavButtons.module.scss';
 
-export const NavButtons = ({ handleQuestionNav }) => {
+export const NavButtons = ({ handleQuestionNav, currentQuestionNumber }) => {
   return (
     <div className={styles.container}>
       <div className={styles.back}>
@@ -12,14 +12,22 @@ export const NavButtons = ({ handleQuestionNav }) => {
           Back
         </button>
       </div>
-      <div className={styles.next}>
-        <button
-          onClick={() => handleQuestionNav(true)}
-          className={styles.nextButton}
-        >
-          Next
-        </button>
-      </div>
+      {currentQuestionNumber !== 18 ? (
+        <div className={styles.next}>
+          <button
+            onClick={() => handleQuestionNav(true)}
+            className={styles.nextButton}
+          >
+            Next
+          </button>
+        </div>
+      ) : (
+        <div>
+          <a className={styles.next} href="/result">
+            Submit
+          </a>
+        </div>
+      )}
     </div>
   );
 };

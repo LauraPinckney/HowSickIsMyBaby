@@ -3,7 +3,6 @@ import styles from './QuestionAnswers.module.scss';
 import { NavButtons } from '../NavButtons/NavButtons';
 import axios from 'axios';
 import { BASE_URL } from '../../constants';
-import { SubmitButton } from '../SubmitButton/SubmitButton';
 
 const baseAnswersState = {
   0: 0,
@@ -96,10 +95,10 @@ export const QuestionAnswers = () => {
       </div>
 
       <div>
-        <NavButtons handleQuestionNav={handleQuestionNav} />
-      </div>
-      <div>
-        <SubmitButton />
+        <NavButtons
+          handleQuestionNav={handleQuestionNav}
+          currentQuestionNumber={currentQuestionNumber}
+        />
       </div>
     </>
   );
