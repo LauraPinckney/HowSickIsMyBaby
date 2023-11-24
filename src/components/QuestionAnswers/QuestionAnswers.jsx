@@ -49,6 +49,15 @@ export const QuestionAnswers = () => {
     setcurrentQuestionNumber(result);
   };
 
+  const getScore = () => {
+    return Object.values(selectedAnswers).reduce(
+      (accumulator, currentValue) => {
+        return accumulator + currentValue;
+      },
+      0
+    );
+  };
+
   useEffect(() => {
     fetchQuestions();
   }, []);
@@ -98,6 +107,7 @@ export const QuestionAnswers = () => {
         <NavButtons
           handleQuestionNav={handleQuestionNav}
           currentQuestionNumber={currentQuestionNumber}
+          getScore={getScore}
         />
       </div>
     </>

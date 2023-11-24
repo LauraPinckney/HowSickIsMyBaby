@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from './NavButtons.module.scss';
+import { Link } from 'react-router-dom';
 
-export const NavButtons = ({ handleQuestionNav, currentQuestionNumber }) => {
+export const NavButtons = ({
+  handleQuestionNav,
+  currentQuestionNumber,
+  getScore,
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.back}>
@@ -11,7 +16,7 @@ export const NavButtons = ({ handleQuestionNav, currentQuestionNumber }) => {
         >
           Back
         </button>
-      </div>{' '}
+      </div>
       <div className={styles.next}>
         {currentQuestionNumber !== 18 ? (
           <button
@@ -21,9 +26,9 @@ export const NavButtons = ({ handleQuestionNav, currentQuestionNumber }) => {
             Next
           </button>
         ) : (
-          <a className={styles.nextButton} href="/result">
+          <Link className={styles.nextButton} to={`/result/${getScore()}`}>
             Submit
-          </a>
+          </Link>
         )}
       </div>
     </div>

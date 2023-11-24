@@ -15,7 +15,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/questions" element={<Questions />} />
-          <Route path="/result" element={<Result />} />
+          <Route path="/result/:score" element={<Result />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
