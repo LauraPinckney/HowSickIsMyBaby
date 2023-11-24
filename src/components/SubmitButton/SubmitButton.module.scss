@@ -1,0 +1,14 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+
+.container {
+  margin: 0 2em 0 2em;
+  display: flex;
+  justify-content: space-between;
+
+  &Button {
+    @include button;
+    border: lightgreen;
+    background-color: lightgreen;
+  }
+}
