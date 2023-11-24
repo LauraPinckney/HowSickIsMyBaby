@@ -11,7 +11,7 @@ export const Results = () => {
 
   const getResult = async () => {
     const { data } = await axios.post(`${BASE_URL}/result`, { score });
-    setResultData(data);
+    setResultData(data.description);
   };
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export const Results = () => {
 
   return (
     <div className={styles.container}>
-      <h2>{resultData}</h2>
+      <div>{resultData}</div>
     </div>
   );
 };
