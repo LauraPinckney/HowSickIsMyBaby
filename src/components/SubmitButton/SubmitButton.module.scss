@@ -3,12 +3,11 @@
 
 .container {
   margin: 0 2em 0 2em;
+  justify-content: right;
   display: flex;
-  justify-content: space-between;
-
-  &Button {
-    @include button;
-    border: lightgreen;
-    background-color: lightgreen;
-  }
+}
+.button {
+  @include button;
+  border: lightgreen;
+  background-color: lightgreen;
 }

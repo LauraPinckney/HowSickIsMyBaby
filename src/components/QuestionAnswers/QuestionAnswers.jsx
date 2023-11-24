@@ -3,6 +3,7 @@ import styles from './QuestionAnswers.module.scss';
 import { NavButtons } from '../NavButtons/NavButtons';
 import axios from 'axios';
 import { BASE_URL } from '../../constants';
+import { SubmitButton } from '../SubmitButton/SubmitButton';
 
 const baseAnswersState = {
   0: 0,
@@ -29,38 +30,45 @@ const baseAnswersState = {
 export const QuestionAnswers = () => {
   const [questions, setQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState(baseAnswersState);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuestionNumber, setcurrentQuestionNumber] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState({});
 
   const fetchQuestions = async () => {
     const { data } = await axios.get(`${BASE_URL}/questions`);
     setQuestions(data);
+    setCurrentQuestion(data[currentQuestionNumber]);
   };
 
   const handleQuestionNav = (increment) => {
-    const result = increment ? currentQuestion + 1 : currentQuestion - 1;
+    const result = increment
+      ? currentQuestionNumber + 1
+      : currentQuestionNumber - 1;
 
     if (result < 0 || result > 18) {
       return;
     }
-    setCurrentQuestion(result);
+    setcurrentQuestionNumber(result);
   };
 
   useEffect(() => {
     fetchQuestions();
   }, []);
 
-  if (!questions.length) {
+  useEffect(() => {
+    setCurrentQuestion(questions[currentQuestionNumber]);
+  }, [currentQuestionNumber]);
+
+  if (!questions.length || !Object.keys(currentQuestion).length) {
     return;
   }
 
-  const qOne = questions[currentQuestion];
   return (
     <>
       <div className={styles.container}>
-        <h2>{qOne.question}</h2>
-        <h3>{qOne.further}</h3>
+        <h2>{currentQuestion.question}</h2>
+        <h3>{currentQuestion.further}</h3>
         <div className={styles.containerButtons}>
-          {qOne.answers.map((answer, index) => {
+          {currentQuestion.answers.map((answer, index) => {
             return (
               <Fragment key={answer.question}>
                 <label
@@ -77,7 +85,7 @@ export const QuestionAnswers = () => {
                   onClick={() => {
                     setSelectedAnswers({
                       ...selectedAnswers,
-                      [currentQuestion]: answer.score,
+                      [currentQuestionNumber]: answer.score,
                     });
                   }}
                 />
@@ -89,6 +97,9 @@ export const QuestionAnswers = () => {
 
       <div>
         <NavButtons handleQuestionNav={handleQuestionNav} />
+      </div>
+      <div>
+        <SubmitButton />
       </div>
     </>
   );

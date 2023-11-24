@@ -3,8 +3,10 @@ import React from 'react';
 
 export const SubmitButton = () => {
   return (
-    <div className={styles.containerButton}>
-      <a href="/result">Submit</a>
+    <div className={styles.container}>
+      <a className={styles.button} href="/result">
+        Submit
+      </a>
     </div>
   );
 };
