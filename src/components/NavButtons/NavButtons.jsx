@@ -11,23 +11,21 @@ export const NavButtons = ({ handleQuestionNav, currentQuestionNumber }) => {
         >
           Back
         </button>
-      </div>
-      {currentQuestionNumber !== 18 ? (
-        <div className={styles.next}>
+      </div>{' '}
+      <div className={styles.next}>
+        {currentQuestionNumber !== 18 ? (
           <button
             onClick={() => handleQuestionNav(true)}
             className={styles.nextButton}
           >
             Next
           </button>
-        </div>
-      ) : (
-        <div>
-          <a className={styles.next} href="/result">
+        ) : (
+          <a className={styles.nextButton} href="/result">
             Submit
           </a>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
