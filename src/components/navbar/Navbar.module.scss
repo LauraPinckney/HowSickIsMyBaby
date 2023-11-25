@@ -7,6 +7,7 @@
 
 .home {
   @include button;
-  border: lightblue;
-  background-color: lightblue;
+  border: #386dff;
+  background-color: #386dff;
+  cursor: grab;
 }

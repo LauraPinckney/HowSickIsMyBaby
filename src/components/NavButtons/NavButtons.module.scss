@@ -11,15 +11,17 @@
   padding-top: 2em;
   &Button {
     @include button;
-    border: lightsalmon;
-    background-color: lightsalmon;
+    border: #f2ac86;
+    background-color: #f2ac86;
+    cursor: grab;
   }
 }
 .next {
   padding-top: 2em;
   &Button {
     @include button;
-    border: lightgreen;
-    background-color: lightgreen;
+    border: #01e3b0;
+    background-color: #01e3b0;
+    cursor: grab;
   }
 }
