@@ -10,12 +10,14 @@ export const NavButtons = ({
   return (
     <div className={styles.container}>
       <div className={styles.back}>
-        <button
-          onClick={() => handleQuestionNav(false)}
-          className={styles.backButton}
-        >
-          Back
-        </button>
+        {currentQuestionNumber <= 0 ? null : (
+          <button
+            onClick={() => handleQuestionNav(false)}
+            className={styles.backButton}
+          >
+            Back
+          </button>
+        )}
       </div>
       <div className={styles.next}>
         {currentQuestionNumber !== 18 ? (
