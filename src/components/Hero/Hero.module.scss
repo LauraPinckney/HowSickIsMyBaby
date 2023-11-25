@@ -14,12 +14,16 @@
 }
 
 .image {
-  width: 133%;
+  width: 200%;
   background-image: url('../../assets/images/TabletHero.jpg');
   justify-content: center;
   display: flex;
 
   @include tablet {
-    width: 85%;
+    width: 150%;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }

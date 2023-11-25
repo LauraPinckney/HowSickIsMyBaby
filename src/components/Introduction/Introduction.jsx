@@ -7,7 +7,7 @@ export const Introduction = () => {
     <div className={styles.container}>
       <Hero />
 
-      <h2>How this works</h2>
+      <h2 className={styles.htwo}>How this works</h2>
       <p>
         How Sick is My Baby? is designed to help you decide whether your baby
         needs a doctor. How Sick is My Baby? contains 19 simple checks which
