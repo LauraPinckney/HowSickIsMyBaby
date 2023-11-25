@@ -3,6 +3,13 @@
 
 .container {
   margin: 1em 2em 1em 2em;
+
+  @include tablet {
+    margin: 2em 4em 2em 4em;
+  }
+  @include desktop {
+    margin: 2em 8em 2em 8em;
+  }
 }
 
 .home {

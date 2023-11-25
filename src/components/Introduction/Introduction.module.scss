@@ -4,6 +4,13 @@
 .container {
   margin: 0 2em 0 2em;
 
+  @include tablet {
+    margin: 0 4em 0 4em;
+  }
+  @include desktop {
+    margin: 0 8em 0 8em;
+  }
+
   &Alert {
     color: $alert-text-colour;
     font-weight: 700;
