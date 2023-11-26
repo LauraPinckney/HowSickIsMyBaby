@@ -13,26 +13,26 @@ export const About = () => {
         <h2>If you are still worried:</h2>
         <p>
           How Sick is my Baby? is not meant to replace your own judgement. You
-          know your baby better than anyone. If your baby’s total score is low
-          but you are still worried, ask your health visitor, midwife or doctor
-          for advice.
+          know your baby better than anyone. If your babyU+0060s total score is
+          low but you are still worried, ask your health visitor, midwife or
+          doctor for advice.
         </p>
         <h2>If you think your baby is getting worse:</h2>
         <p>Do the questions again and follow the result advice.</p>
         <h2>If you think your baby is seriously ill:</h2>
         <p>
           Phone your doctor. If you get an answerphone message, call the number
-          given on the message or call NHS 111. If you can’t make a phone call,
-          take your baby to the Accident and Emergency (Casualty) Department at
-          the nearest hospital which deals with children.
+          given on the message or call NHS 111. If you canU+0060t make a phone
+          call, take your baby to the Accident and Emergency Department at the
+          nearest hospital which deals with children.
         </p>
         <h2 className={styles.alert}>
-          If you think your baby’s life is in danger:
+          If you think your babyU+0060s life is in danger:
         </h2>
         <h3 className={styles.alert}>
           Telephone 999. Ask for the ambulance service and say it is for a baby.
-          You do not need to pay for any 999 calls (so they can be made from
-          mobile phones without any credit).
+          You do not need to pay for any 999 calls, so they can be made from
+          mobile phones without any credit.
         </h3>
         <p>
           Very, very rarely babies die suddenly with no signs of illness. How
