@@ -6,6 +6,7 @@ import { Navbar } from './components/navbar/navbar';
 import { Questions } from './pages/Questions/Questions';
 import { Result } from './pages/Result/Result';
 import { Footer } from './components';
+import { About } from './components/About/About';
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/questions" element={<Questions />} />
           <Route path="/result/:score" element={<Result />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>

@@ -7,6 +7,9 @@ export const Navbar = () => {
       <a className={styles.home} href="/">
         Home
       </a>
+      <a className={styles.about} href="/about">
+        About
+      </a>
     </div>
   );
 };

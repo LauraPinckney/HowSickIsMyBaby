@@ -3,7 +3,6 @@
 
 .container {
   margin: 1em 2em 1em 2em;
-  display: flex;
 
   @include tablet {
     margin: 2em 4em 2em 4em;
@@ -11,18 +10,4 @@
   @include desktop {
     margin: 2em 8em 2em 8em;
   }
-}
-
-.home {
-  @include button;
-  border: #386dff;
-  background-color: #386dff;
-}
-
-.about {
-  @include button;
-  border: lightgrey;
-  background-color: lightgrey;
-  cursor: grab;
-  margin-left: 1em;
 }
