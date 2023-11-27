@@ -17,14 +17,20 @@ Caregivers with babies who are unsure of the level of medical attention their ba
 This app is built up of two applications:
 
 - https://github.com/LauraPinckney/HowSickIsMyBaby (you are here)
+
+  ```
   npm i
   npm start
   Runs the app in the development mode.
   Open http://localhost:3000 to view it in your browser.
 
+  ```
+
 - https://github.com/LauraPinckney/HowSickIsMyBaby-API
+  ```
   node --watch index.js
   Open http://localhost:8080 if you wish to checkout the API console logs or any other fun stuff.
+  ```
 
 ## Nice-to-haves
 

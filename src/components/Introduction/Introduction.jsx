@@ -6,7 +6,6 @@ export const Introduction = () => {
   return (
     <div className={styles.container}>
       <Hero />
-
       <h2 className={styles.htwo}>How this works</h2>
       <p>
         How Sick is My Baby? is designed to help you decide whether your baby
@@ -15,6 +14,7 @@ export const Introduction = () => {
         Go through all the checks, the scores will be added all together at the
         end. The higher the score the sicker the baby is likely to be.
       </p>
+
       <h3>If your baby:</h3>
       <ol>
         <li>stops breathing or goes blue </li>

@@ -37,3 +37,9 @@
 .htwo {
   padding-top: 0.5em;
 }
+
+.flex {
+  @include desktop {
+    display: flex;
+  }
+}
